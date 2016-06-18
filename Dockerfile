@@ -1,5 +1,4 @@
 FROM index.alauda.cn/linfeiyang/apline-perl
-RUN apk add --update make wget perl-io-socket-ssl
 RUN cpan -i App::cpanminus
 RUN cpanm -v Mojo::Webqq
 ADD main.pl main.pl
