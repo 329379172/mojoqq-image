@@ -1,4 +1,4 @@
-FROM alpine:3.3
+FROM alpine:edge
 RUN apk add --update perl make wget perl-io-socket-ssl && rm -rf /var/cache/apk/*
 RUN cpan -i App::cpanminus
 RUN cpanm -v Mojo::Webqq
