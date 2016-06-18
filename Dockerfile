@@ -1,9 +1,8 @@
-FROM index.alauda.cn/linfeiyang/apline-perl:v20160618.083623
+FROM alpine:3.3
+RUN apk add --update perl make wget perl-io-socket-ssl && rm -rf /var/cache/apk/*
 RUN cpan -i App::cpanminus
 RUN cpanm -v Mojo::Webqq
 ADD main.pl main.pl
 RUN cpanm -v MIME::Lite
 RUN cpanm -v Mojo::SMTP::Client
-RUN apk del make wget
-RUN rm -rf /var/cache/apk/*
 CMD ["perl","main.pl"]
