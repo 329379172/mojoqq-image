@@ -1,4 +1,4 @@
-FROM index.alauda.cn/linfeiyang/apline-perl
+FROM index.alauda.cn/linfeiyang/apline-perl:v20160618.083623
 RUN cpan -i App::cpanminus
 RUN cpanm -v Mojo::Webqq
 ADD main.pl main.pl
