@@ -52,14 +52,14 @@ $client->load("ShowMsg");
 ##$client->load("Perldoc");
 #
 ##智能聊天回复
-#$client->load("SmartReply");
+$client->load("SmartReply");
 ##需要私聊或@机器人
 #
 ##对大神进行鄙视
 #$client->load("FuckDaShen");
 #
 ##创建知识库
-#$client->load("KnowledgeBase");
+$client->load("KnowledgeBase");
 ##示例：learn 今天天气怎么样  天气很好
 ##      学习  "你吃了吗"      当然吃了
 ##      learn '哈哈 你真笨'   "就你聪明"
