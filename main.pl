@@ -12,6 +12,7 @@ my $client=Mojo::Webqq->new(
 $client->on(receive_message=>sub{
 				my ($client,$msg)=@_;
 		});
+$client->load("ShowMsg");
 $client->load("Openqq",data=>{post_api=>$ENV{POST_API}});
 $client->run();
 
